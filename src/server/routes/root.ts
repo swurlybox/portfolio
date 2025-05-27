@@ -9,4 +9,8 @@ router.get('/', (_req : Request, res : Response) => {
     res.send("<h1>Hello World!<h1>");
 })
 
+router.get('/error', () => {
+    throw new Error('Broken');
+})
+
 export default router;

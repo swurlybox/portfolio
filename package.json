@@ -4,8 +4,7 @@
   "description": "this is my portfolio",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node dist/index.js"
+    "start:dev": "concurrently --names transpiler,server -c yellow,blue \"tsc --watch --preserveWatchOutput\" \"nodemon -e js dist/index.js\""
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,10 @@
   "devDependencies": {
     "@types/cors": "^2.8.18",
     "@types/express": "^5.0.2",
+    "@types/node": "^22.15.24",
+    "concurrently": "^9.1.2",
     "globals": "^16.2.0",
+    "nodemon": "^3.1.10",
     "typescript": "^5.8.3"
   },
   "dependencies": {

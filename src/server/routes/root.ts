@@ -5,7 +5,9 @@ import { Request, Response } from "express";
 const router = express.Router();
 
 router.get('/', (_req : Request, res : Response) => {
-    // Send basic react component to client
+    // TODO: Send basic react component to client
+    
+    // For now though, send raw html
     res.send("<h1>Hello World!<h1>");
 })
 

@@ -4,7 +4,7 @@
   "description": "this is my portfolio",
   "main": "dist/index.js",
   "scripts": {
-    "start:dev": "concurrently --names transpiler,server -c yellow,blue \"tsc --watch --preserveWatchOutput\" \"nodemon -e js dist/index.js\""
+    "start:dev": "concurrently --names transpiler,server -c yellow,blue \"tsc --watch --preserveWatchOutput\" \"nodemon -e js,html dist/index.js\""
   },
   "repository": {
     "type": "git",
@@ -17,11 +17,15 @@
   },
   "homepage": "https://github.com/swurlybox/portfolio#readme",
   "devDependencies": {
+    "@types/connect-livereload": "^0.6.3",
     "@types/cors": "^2.8.18",
     "@types/express": "^5.0.2",
+    "@types/livereload": "^0.9.5",
     "@types/node": "^22.15.24",
     "concurrently": "^9.1.2",
+    "connect-livereload": "^0.6.1",
     "globals": "^16.2.0",
+    "livereload": "^0.9.3",
     "nodemon": "^3.1.10",
     "typescript": "^5.8.3"
   },

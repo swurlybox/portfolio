@@ -18,6 +18,7 @@ const PORT = process.env.PORT || 3000;
 
 // This offloads the request to the root router.
 app.use('/', routes.root);
+app.use('/sandbox', routes.sandbox);
 
 
 

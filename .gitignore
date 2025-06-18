@@ -98,6 +98,7 @@ dist
 
 # public
 public/css/style.css
+public/videos
 
 # vuepress build output
 .vuepress/dist

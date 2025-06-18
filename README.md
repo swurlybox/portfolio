@@ -12,7 +12,6 @@ delve into web dev concepts on my own.
 - Backend Frameworks            : Express.js
 - Backend Runtime Environment   : Node.js
 - Languages                     : Javascript, Typescript, HTML, CSS
-
 - Relational Databases          : MySQL, Postgresql
 - Cloud Server                  : AWS EC2
 
@@ -28,7 +27,8 @@ delve into web dev concepts on my own.
 - Authentication
 - Input Validation (Frontend and Backend)
 - Sessions
-- Separation of Concerns; Model View Controller Architecture
+- Separation of Concerns
+- MVC Architecture
 
 ## Software Development Cycle
 
@@ -37,21 +37,17 @@ There are many different roles in a Software Development Team, but being
 a good software engineer means knowing and being able to do the tasks
 of any of these roles.
 
-- Requirements Gathering            (Product Owner)
-- Wireframes, Mockups, Use Cases    (Graphic Designer)
-- Brainstorming Tech Stack          (Software Architect)
-- Documentation                     (Software Developer)
-- Testing, Logging, CI/CD           (Quality Assurance Engineer)
-- Prototypes                        (Everyone)
-- Task Management                   (Team Lead)
-- Weekly Meetings                   (Product Manager, SCRUM Master)
-- Competitive Analysis              (Business Analyst)
+- Requirements Gathering            
+- Wireframes, Mockups, Use Cases    
+- Brainstorming Tech Stack          
+- Documentation                     
+- Testing, Logging, CI/CD           
+- Prototypes                        
+- Task Management                   
+- Weekly Meetings                   
+- Competitive Analysis              
 
 # What I hope to learn from this Web Development Project
-
-I only have surface-level knowledge with most of the aforementioned technologies
-(other team members set up some of the tech, heard about it in saying, etc).
-I want to delve deeper in to the aforementioned concepts and more.
 
 - CI/CD
 - Web Security Practices
@@ -59,8 +55,18 @@ I want to delve deeper in to the aforementioned concepts and more.
 - Logging Frameworks like winston.
 - Robust Frontend Framework (surprisingly never learned React)
 
-I think I'm fairly confident in basic Backend tasks such as writing DB queries,
-retrieving and sending data between client and server, and writing application
-logic.
+# Thanks for reading my 30-page long dissertation
 
-Where I lack is in DevOps, Frontend, Quality Assurance, and Test Automation.
+
+
+
+
+
+
+
+## Comments or ramblings as I work on this portfolio
+
+6/18/25
+- i'm working on video and audio webapis right now. It really doesn't need to take this long, but I'm diving into a rabbit hole
+- im trying to create custom media player icons for video playback controls, and holy shit i have nothing but respect for graphic designers
+- i dont come from a graphic design background, just computer science, but i can say this: good art takes as long as it needs to

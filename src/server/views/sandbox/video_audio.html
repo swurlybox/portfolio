@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="p-4">
 
     <!-- Navbar -->
 
@@ -17,6 +17,77 @@
     </div>
 
     <h1>damn this shit is fun. actually, not so much as fun, but the process is enjoyable</h1>
+
+    <hr>
+
+    <p>For large media files, typically you would store them in a dedicated storage service like an Amazon S3 Bucket or Google Cloud,
+        and then access them through their dedicated API.
+    </p>
+    <p>You wouldn't really store them in the project directory because:
+        <ol>
+            <li>1. You'd be exposing large files in the repository, making the project incredibly bulky and time consuming to port
+                to another environment.</li>
+
+            <li>2. If this were deployed on an EC2 instance with limited resources, the media files would hog all the storage, which could
+                possibly lead to a server crash.</li>
+
+            <li>3. And probably many other reasons that I'm currently too tired or stupid to think of...</li>
+        </ol>
+    </p>
+    <p>However, for a small project such as this, storing the video locally on the computer is fine</p>
+
+    <p>Note that if you were to try and clone this public repo, you wouldn't have access to the video file</p>
+    <p> as its stored locally on MY computer and not the repository</p>
+
+    <hr>
+
+    
+    <video controls class="object-cover h-[720px] w-[1280px]">
+        <source src="/videos/csc667_term_demo.mp4" type="video/mp4" />
+
+    </video>
+
+    <p>Whats interesting here is the controls attribute in the html video tag, which provides a default set of video playback controls</p>
+    <p>However, the default playback controls will look different for each browser, which is not good if you want a uniform look or cross-browser support</p>
+    <p>Let's try using the HTMLMediaElement API to create our own playback controls (I'll be making it fairly similar to YouTube's media player)!</p>
+
+    <hr>
+
+    <!-- custom media player -->
+
+    <div class="video-player">
+
+        <video class="object-cover h-[720px] w-[1280px]">
+            <source src="/videos/csc667_term_demo.mp4" type="video/mp4" />
+        </video>
+
+        <div class="controls">
+            <input class="video-length-slider" type="range">
+            <div class="lower-controls flex">
+
+                <button class="play">play</button>
+                <button class="mute">mute</button>
+                <input class="volume-slider" type="range">
+
+                <div class="timer">
+                    <div></div>
+                    <span aria-label="current-time">00:00</span>
+                    <span aria-label="total-time">00:00</span>
+                </div>
+
+
+                <button class="fullscreen">fullscreen</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="title">title</div>
+
+
+
     
 </body>
 </html>

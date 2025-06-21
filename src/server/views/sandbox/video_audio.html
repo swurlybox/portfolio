@@ -55,28 +55,39 @@
 
     <!-- custom media player -->
 
-    <div class="video-player">
+    <div class="video-player h-[720px] w-[1280px]">
 
         <video class="object-cover h-[720px] w-[1280px]">
             <source src="/videos/csc667_term_demo.mp4" type="video/mp4" />
         </video>
 
-        <div class="controls">
-            <input class="video-length-slider" type="range">
-            <div class="lower-controls flex">
+        <div class="controls ">
+            <input class="video-length-slider w-full" type="range">
+            <div class="lower-controls flex gap-3 bg-linear-to-t from-black/20 to-white/20">
 
-                <button class="play">play</button>
-                <button class="mute">mute</button>
+                <!-- play/pause button -->
+                <button class="play h-5 w-5">
+                    <img class="w-full h-full" src="/images/svgs/play-icon.svg" alt="play/pause">
+                </button>
+
+                <!-- mute/unmute button -->
+                <button class="mute h-5 w-5">
+                    <img class="w-full h-full" src="/images/svgs/sound-icon.svg" alt="sound">
+                </button>
+
                 <input class="volume-slider" type="range">
 
                 <div class="timer">
                     <div></div>
                     <span aria-label="current-time">00:00</span>
+                    <span> / </span>
                     <span aria-label="total-time">00:00</span>
                 </div>
 
 
-                <button class="fullscreen">fullscreen</button>
+                <button class="fullscreen h-5 w-5">
+                    <img class="w-full h-full" src="/images/svgs/fullscreen-icon.svg" alt="fullscreen">
+                </button>
 
             </div>
 

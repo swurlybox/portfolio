@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="269.91623"
+   height="251.62292"
+   viewBox="0 0 269.91623 251.62292"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-452.03376,-622.94152)">
+    <g
+       id="g27"
+       transform="translate(-107.48023,9.0509668)"
+       style="fill:#ffffff">
+      <g
+         id="g22-7"
+         transform="translate(445.29153,-0.47097539)"
+         style="fill:#ffffff">
+        <path
+           d="M 274.22246,824.66914 153.06426,702.67305 h -28.8418 v 75 h 71.875 l 78.125,62.5 z"
+           style="opacity:1;fill:#ffffff;stroke:#1a1a1a;stroke-width:20;stroke-opacity:0.497727;paint-order:stroke markers fill"
+           id="path27" />
+        <path
+           d="m 221.03496,682.72188 53.18555,53.55469 v -96.10352 z"
+           style="opacity:1;fill:#ffffff;stroke:#1a1a1a;stroke-width:20;stroke-opacity:0.497727;paint-order:stroke markers fill"
+           id="path22" />
+        <path
+           d="m 327.02129,789.44063 19.43359,19.57031 c 4.20051,-4.52616 8.00071,-9.36808 11.35352,-14.48828 21.88343,-33.63211 21.88343,-75.06906 0,-108.70117 -13.40478,-20.47255 -33.97676,-36.50127 -58.58789,-45.65039 v 33.33398 a 81.669757,72.467024 0 0 1 39.05859,30.4336 81.669757,72.467024 0 0 1 0,72.46679 81.669757,72.467024 0 0 1 -11.25781,13.03516 z"
+           style="opacity:1;fill:#ffffff;stroke:#1a1a1a;stroke-width:20;stroke-opacity:0.497727;paint-order:stroke markers fill"
+           id="path25" />
+        <path
+           d="m 299.22051,761.44844 7.99609,8.05274 a 40.834876,36.233512 0 0 0 11.5332,-11.2129 40.834876,36.233512 0 0 0 0,-36.23437 40.834876,36.233512 0 0 0 -19.52929,-15.2168 z"
+           style="opacity:1;fill:#ffffff;stroke:#1a1a1a;stroke-width:20;stroke-opacity:0.497727;paint-order:stroke markers fill"
+           id="path23" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#1a1a1a;stroke-width:21.5908;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:0.497727;paint-order:stroke markers fill"
+         id="rect22-5"
+         width="249.15776"
+         height="62.28944"
+         x="889.44324"
+         y="-2.6559565"
+         transform="matrix(0.70466628,0.70953889,-0.70466628,0.70953889,0,0)" />
+    </g>
+  </g>
+</svg>

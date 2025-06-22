@@ -55,29 +55,30 @@
 
     <!-- custom media player -->
 
-    <div class="video-player h-[720px] w-[1280px]">
+    <div class="video-player h-[720px] w-[1280px] relative">
 
         <video class="object-cover h-[720px] w-[1280px]">
             <source src="/videos/csc667_term_demo.mp4" type="video/mp4" />
         </video>
 
-        <div class="controls ">
-            <input class="video-length-slider w-full" type="range">
-            <div class="lower-controls flex gap-3 bg-linear-to-t from-black/20 to-white/20">
+        <div class="controls absolute w-full bottom-0">
+            <input class="video-length-slider w-full absolute -translate-y-1/2" type="range">
+            <div class="lower-controls flex align-middle p-4 gap-3 bg-linear-to-t
+                      from-black/80 to-gray-500/20 [&>button]:h-7 [&>button]:w-7">
 
                 <!-- play/pause button -->
-                <button class="play h-5 w-5">
+                <button class="play">
                     <img class="w-full h-full" src="/images/svgs/play-icon.svg" alt="play/pause">
                 </button>
 
                 <!-- mute/unmute button -->
-                <button class="mute h-5 w-5">
+                <button class="mute">
                     <img class="w-full h-full" src="/images/svgs/sound-icon.svg" alt="sound">
                 </button>
 
                 <input class="volume-slider" type="range">
 
-                <div class="timer">
+                <div class="timer text-white">
                     <div></div>
                     <span aria-label="current-time">00:00</span>
                     <span> / </span>
@@ -85,7 +86,7 @@
                 </div>
 
 
-                <button class="fullscreen h-5 w-5">
+                <button class="fullscreen ml-auto">
                     <img class="w-full h-full" src="/images/svgs/fullscreen-icon.svg" alt="fullscreen">
                 </button>
 
@@ -95,7 +96,7 @@
 
     </div>
 
-    <div class="title">title</div>
+    <div class="title">CSC667 Term Project Demo</div>
 
 
 

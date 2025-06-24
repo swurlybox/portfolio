@@ -6,6 +6,9 @@
     <title>Video and Audio WebAPI</title>
 
     <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/media_player/index.js" defer></script>
+
 </head>
 <body class="p-4">
 
@@ -55,13 +58,13 @@
 
     <!-- custom media player -->
 
-    <div class="video-player h-[720px] w-[1280px] relative">
+    <div id="media-player" class="h-[720px] w-[1280px] relative">
 
-        <video class="object-cover h-[720px] w-[1280px]">
+        <video id="video-element" class="object-cover h-[720px] w-[1280px]">
             <source src="/videos/csc667_term_demo.mp4" type="video/mp4" />
         </video>
 
-        <div class="controls absolute w-full bottom-0">
+        <div id="playback-controls" class="controls absolute w-full bottom-0" style="opacity:0">
             <input class="video-length-slider w-full absolute -translate-y-1/2" type="range">
             <div class="lower-controls flex align-middle p-4 gap-3 bg-linear-to-t
                       from-black/80 to-gray-500/20 [&>button]:h-7 [&>button]:w-7">

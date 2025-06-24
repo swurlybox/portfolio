@@ -15,12 +15,13 @@ import configureLivereload from "./livereload";
 
 
 const server = (app : Express) => {
-    dotenv.config();                    // .env credentials
+    dotenv.config();                        // .env credentials
 
-    app.use(cors());                    // enables Cross-Origin Resource Sharing
-    app.use(express.json())             // parses requests w/ application/json as JSON
-    app.use(express.static('public'));  // static files
-    configureLivereload(app);           // monkey-patch livereload script on all html files
+    app.use(cors());                        // enables Cross-Origin Resource Sharing
+    app.use(express.json())                 // parses requests w/ application/json as JSON
+    app.use(express.static('public'));      // static files
+    app.use(express.static('dist/client')); // frontend js files
+    configureLivereload(app);               // monkey-patch livereload script on all html files
 
     console.log("Server has been configured");
 }

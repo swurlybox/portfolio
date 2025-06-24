@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "this is my portfolio",
-  "main": "dist/index.js",
+  "main": "dist/server/index.js",
   "scripts": {
     "start:dev": "concurrently --names transpile,tailwind,server -c magenta,yellow,blue \"npm run transpile\" \"npm run tailwind\" \"npm run server\"",
     "transpile": "tsc --watch --preserveWatchOutput",

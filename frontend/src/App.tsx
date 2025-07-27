@@ -1,30 +1,30 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Button } from 'react-bootstrap';
+import { Post } from './models/post';
 
 function App() {
 
-  const [clickCount, setClickCount] = useState(0);
+  const [posts, setPosts] = useState<Post[]>([]);
 
-
-
-
+  useEffect(() => {
+    async function loadPosts(){
+      try {
+        const response = await fetch("/api/posts", { method: "GET"});
+        const posts = await response.json();
+        setPosts(posts)
+      } catch (error) {
+        console.error(error);
+        alert(error);
+      }
+    }
+    loadPosts();
+  }, []);
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Making an edit to the react app.
-        </p>
-        
-        <Button onClick={() => setClickCount(clickCount + 1)}>
-          Click {clickCount} times
-        </Button>
-
-
-      </header>
+      {JSON.stringify(posts)}
     </div>
   );
 }

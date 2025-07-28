@@ -11,5 +11,6 @@ const postSchema = new Schema({
 type Post = InferSchemaType<typeof postSchema>;
 // Result: type Post = {poster, title, description, ...}
 
+// Compiles the schema so it appears in the database as a table.
 // Exporting the compiled model (like a table) for instantiating instances (entities).
 export default model<Post>("Post", postSchema);
